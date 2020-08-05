@@ -1,0 +1,45 @@
+.slide {
+    position: relative;
+    height: 100%;
+    transition: all .2s ease-out;
+    & > img {
+        height: 100%;
+        transform: scale(1);
+    }
+    & > img:hover {
+        filter: brightness(50%);
+        transform: scale(1);
+    }
+
+    &:hover &__overlay {
+        opacity: 1;
+    }
+
+    &__overlay {
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        background-color: black;
+        color: white;
+        margin: 0 auto;
+        white-space: pre-wrap;
+        position: absolute;
+        width: 100%;
+        height: 18rem;
+        bottom: 0;
+
+        &__title {
+            font-size: 2rem;
+            text-align: center;
+            margin: 3vh;
+        }
+    
+        &__text {
+            font-size: 1.8rem;
+            white-space: pre-line;
+            text-align: center;
+            line-height: 1.3rem;
+            margin: 2rem;
+        }
+    }
+
+}

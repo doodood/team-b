@@ -1,0 +1,40 @@
+.home {
+  display: grid;
+  /* grid-template-rows: 80vh  40vh repeat(auto-fill,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));  repeat(auto-fill,1fr);*/
+  //grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [dood-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    ) [dood-end] minmax(6rem, 1fr) [full-end];
+  margin: 0 auto;
+  grid-template-rows: 80vh repeat(3, min-content);
+  //grid-gap: 10px;
+  grid-auto-rows: min-content minmax(100px, auto);
+  &_slides {
+    background-color: $color-primary;
+    grid-column: full-start / full-end;
+    display: flex;
+    //overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 100%;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &_features {
+    grid-column: dood-start/dood-end;
+        display: grid;
+        margin:10rem 0;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    grid-template-rows: auto auto;
+    align-items: start;
+  }
+
+  .footer {
+    grid-column: 1 / -1;
+    padding: 5rem;
+  }
+}
