@@ -32,7 +32,14 @@
     grid-template-rows: auto auto;
     align-items: start;
   }
-
+&_cards {
+    grid-column: dood-start/dood-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    grid-template-rows: auto auto;
+    grid-gap: 7rem;
+    margin: 15rem 0;
+}
   .footer {
     grid-column: 1 / -1;
     padding: 5rem;

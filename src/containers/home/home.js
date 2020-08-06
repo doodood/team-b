@@ -33,8 +33,6 @@ const Home = () => {
           })}
         </div>
         <div className="home_features">
-          {/* <h3 className="features_header">Features</h3> */}
-         {/*  <div className="features-section"> */}
             <Feature
               icon="heart"
               text="'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident."
@@ -66,7 +64,48 @@ const Home = () => {
               text="'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident."
               title="the Dood3"
             ></Feature>
-          {/* </div> */}
+        </div>
+        <div className="home_cards">
+          <div className="card">
+            <img src="" alt="" className="card__img"/>
+            <h4 className="card__title">Title</h4>
+            <div className="card__body">
+            <p>TEST</p>
+            </div>
+            <button className="btn card__btn">CALL</button>
+          </div>
+          <div className="card">
+            <img src="" alt="" className="card__img"/>
+            <h4 className="card__title">Title</h4>
+            <div className="card__body">
+            <p>TEST</p>
+            </div>
+            <button className="btn card__btn">CALL</button>
+          </div>
+          <div className="card">
+            <img src="" alt="" className="card__img"/>
+            <h4 className="card__title">Title</h4>
+            <div className="card__body">
+            <p>TEST</p>
+            </div>
+            <button className="btn card__btn">CALL</button>
+          </div>
+          <div className="card">
+            <img src="" alt="" className="card__img"/>
+            <h4 className="card__title">Title</h4>
+            <div className="card__body">
+            <p>TEST</p>
+            </div>
+            <button className="btn card__btn">CALL</button>
+          </div>
+          <div className="card">
+            <img src="" alt="" className="card__img"/>
+            <h4 className="card__title">Title</h4>
+            <div className="card__body">
+            <p>TEST</p>
+            </div>
+            <button className="btn card__btn">CALL</button>
+          </div>
         </div>
         <footer className="footer">Footer</footer>
       </div>

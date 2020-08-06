@@ -1,0 +1,19 @@
+.card {
+  background-color: $color-grey;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__img {
+    width: 100%;
+    grid-column: 1/-1;
+  }
+  &__body {
+  }
+  &__title {
+      grid-column: 1/-1;
+  }
+
+  &__btn {
+    grid-column: 1/-1;
+  }
+}
