@@ -17,3 +17,10 @@ body {
     //padding: 3rem;
     box-sizing: border-box;
 }
+
+a:visited,
+a:link {
+    text-decoration: none;
+    color: $color-white;
+    text-align: center;
+}
