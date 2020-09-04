@@ -101,7 +101,7 @@ const Home = () => {
             <div className="card__body">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <Link to={APP_ROUTES.DETAILS_EVENT} className="card__btn btn"> Test 2</Link>
+            <Link to={APP_ROUTES.THIRD} className="card__btn btn"> Third</Link>
           </div>
 
           <div className="card">
