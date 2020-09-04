@@ -10,6 +10,7 @@ import {
 import { APP_ROUTES } from "./utils/route-config";
 const Home = lazy(() => import("./containers/home/home"));
 const DetailsEvent = lazy(() => import("./containers/details-event/detail-event"));
+const Secondary = lazy(() => import("./containers/details-event/secondary"));
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <Switch>
           <Route path={APP_ROUTES.HOME} component={Home}></Route>
           <Route path={APP_ROUTES.DETAILS_EVENT} component={DetailsEvent}></Route>
+          <Route path={APP_ROUTES.SECONDARY} component={Secondary}></Route>
           <Redirect to={APP_ROUTES.HOME} />
         </Switch>
       </Suspense>

@@ -106,11 +106,11 @@ const Home = () => {
 
           <div className="card">
             <img src={Image1} alt="" className="card__img" />
-            <h4 className="card__title">The Dood</h4>
+            <h4 className="card__title">The Secondary</h4>
             <div className="card__body">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <Link to={APP_ROUTES.DETAILS_EVENT} className="card__btn btn"> Test 2</Link>
+            <Link to={APP_ROUTES.SECONDARY} className="card__btn btn"> Secondary layout</Link>
             
           </div>
 
