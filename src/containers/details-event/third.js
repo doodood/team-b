@@ -49,5 +49,3 @@ const Third = (props) => {
   );
 };
 export default Third;
-
-/* */

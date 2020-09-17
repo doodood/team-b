@@ -18,6 +18,7 @@ const DetailEvent = (props) => {
             Modi architecto quaerat non exercitationem mollitia dignissimos earum eveniet soluta omnis!
              Quidem eaque nisi vero odit iusto porro id. Accusantium, cupiditate itaque?</p>
              <div className="event__heading-image">
+             <img src={Image1} alt="" className="event__heading-img" width="50%"/> 
              </div>
           </div>
 

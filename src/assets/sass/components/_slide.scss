@@ -6,9 +6,12 @@
     width: 100%;
     &>img {
         transform: scale(1);
-        object-fit: cover;
-        height: auto;
-        transition: all .9s;
+        /*object-fit: cover;
+         height: auto;
+        transition: all .9s; */
+        object-fit: fill;
+        height: 100%;
+        width: fit-content;
     }
     /* &>img:hover {
         filter: brightness(50%);
