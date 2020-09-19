@@ -2,6 +2,7 @@
     background-color: $color-grey;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 .5rem 2rem rgba($color-black, .7);
     &__img {
         width: 100%;
         grid-column: 1/-1;
