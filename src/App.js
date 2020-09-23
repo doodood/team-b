@@ -8,6 +8,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import { APP_ROUTES } from "./utils/route-config";
+import Loader  from "./components/loader/loader";
 const Home = lazy(() => import("./containers/home/home"));
 const DetailsEvent = lazy(() => import("./containers/details-event/detail-event"));
 const Secondary = lazy(() => import("./containers/details-event/secondary"));
@@ -15,7 +16,7 @@ const Third = lazy(() => import("./containers/details-event/third"));
 function App() {
   return (
     <Router>
-      <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loader />}>
         <Switch>
           <Route path={APP_ROUTES.HOME} component={Home}></Route>
           <Route path={APP_ROUTES.DETAILS_EVENT} component={DetailsEvent}></Route>
