@@ -19,7 +19,7 @@ function App() {
     <Suspense fallback={<Loader />}>
         <Switch>
           <Route path={APP_ROUTES.HOME} component={Home}></Route>
-          <Route path={APP_ROUTES.DETAILS_EVENT} component={DetailsEvent}></Route>
+          <Route path={`${APP_ROUTES.DETAILS_EVENT}:id/`} component={DetailsEvent}></Route>
           <Route path={APP_ROUTES.SECONDARY} component={Secondary}></Route>
           <Route path={APP_ROUTES.THIRD} component={Third}></Route>
           <Redirect to={APP_ROUTES.HOME} />

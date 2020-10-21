@@ -4,6 +4,8 @@
     //transition: all 7s ease-out;
     object-fit: cover;
     width: 100%;
+    /*to fit with the new layout (Link)*/
+    height: 100%;
     &>img {
         transform: scale(1);
         /*object-fit: cover;
@@ -17,6 +19,9 @@
         filter: brightness(50%);
         transform: scale(1);
     } */
+    &:hover {
+        cursor: pointer;
+    }
     &:hover &__overlay {
         opacity: 1;
     }

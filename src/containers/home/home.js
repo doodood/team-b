@@ -25,11 +25,13 @@ const Home = () => {
           {events.map((event) => {
             return (
               <Fragment key={event.id}>
+              <Link to={`/details-event/${event.slug}`}>
                 <Slide
                   img={event.content.thumbnail}
                   title={event.content.title}
                   text={event.content.summary}
                 />
+                </Link>
               </Fragment>
             );
           })}
@@ -123,6 +125,17 @@ const Home = () => {
             <Link to={APP_ROUTES.DETAILS_EVENT} className="card__btn btn"> Test 2</Link>
           </div>
         </div>
+        <article className="article-section">
+      <a href="https://geo.itunes.apple.com/us/movie/primer/id536457427?at=1l3vqFJ&ct=1l3vqFJ&mt=6" className="fl w-50 w-25-l link overflow-hidden">
+        <div role="img" aria-label="Primer movie" className="grow aspect-ratio--4x6 " style={{background: "url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/primer.jpg) no-repeat center center", backgroundSize: "cover"}}></div>
+      </a>
+      <a href="https://geo.itunes.apple.com/us/movie/the-big-short/id1061320456?at=1l3vqFJ&mt=6" className="fl w-50 w-25-l link overflow-hidden">
+        <div role="img" aria-label="The Big Short movie" className="grow aspect-ratio--4x6 " style={{background: "url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/the-big-short.jpg) no-repeat center center", backgroundSize: "cover"}}></div>
+      </a>
+      <a href="https://geo.itunes.apple.com/us/movie/bottle-rocket/id315360821?at=1l3vqFJ&mt=6" className="fl w-50 w-25-l link overflow-hidden">
+        <div role="img" aria-label="Bottle Rocket movie" className="grow aspect-ratio--4x6 " style={{background: "url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/bottlerocket.jpg) no-repeat center center", backgroundSize: "cover"}}></div>
+      </a>
+      </article>
         <Footer />
       </div>
     </Fragment>
